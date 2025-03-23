@@ -30,7 +30,7 @@ class ContentGenerator:
     def __init__(self, analyzer = None ):
         self.analyzer = analyzer  
 
-        self.model = genai.GenerativeModel('gemini-pro')
+        self.model = genai.GenerativeModel('gemini-1.5-pro-001')
         genai.configure(api_key=os.environ['GEMINI_API_KEY'])
         
     
