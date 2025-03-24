@@ -1,6 +1,17 @@
-from dotenv import load_dotenv
+# import os
+# import test_config
+# api_key=os.environ['GEMINI_API_KEY']
+# print(api_key)
+
+
 import os
+from dotenv import load_dotenv
 
-load_dotenv()  # Load variables from .env file
+# Load environment variables from .env
+load_dotenv()
 
-api_key = os.getenv("changed to charyktk ")  # Use os.getenv to avoid KeyError
+# Access the variables
+api_key = os.getenv("GEMINI_API_KEY")
+
+# Print to verify (optional, do not print API keys in production)
+print(api_key)  
