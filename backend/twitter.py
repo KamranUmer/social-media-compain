@@ -2,6 +2,11 @@ import requests
 import json 
 from user import User 
 import os 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+rapid_api_key = os.getenv("RAPID_API_KEY")
 
 class twitterHandler:
     def __init__(self,name):
@@ -20,7 +25,8 @@ class twitterHandler:
         #     "X-RapidAPI-Host": "twitter241.p.rapidapi.com"
         # }
         headers = {
-            "X-RapidAPI-Key": os.environ['RAPID_API_KEY'],
+            # "X-RapidAPI-Key": os.environ['RAPID_API_KEY'],
+            "X-RapidAPI-Key": rapid_api_key,
             "X-RapidAPI-Host": "twitter241.p.rapidapi.com"
         }
         data = requests.get(url, headers=headers, params=querystring)
@@ -41,7 +47,8 @@ class twitterHandler:
         #     "X-RapidAPI-Host": "twitter241.p.rapidapi.com"
         # }
         headers = {
-            "X-RapidAPI-Key": os.environ['RAPID_API_KEY'],
+            # "X-RapidAPI-Key": os.environ['RAPID_API_KEY'],
+            "X-RapidAPI-Key": rapid_api_key,
             "X-RapidAPI-Host": "twitter241.p.rapidapi.com"
         }
 
@@ -62,7 +69,8 @@ class twitterHandler:
         # }
 
         headers = {
-            "X-RapidAPI-Key": os.environ['RAPID_API_KEY'],
+            # "X-RapidAPI-Key": os.environ['RAPID_API_KEY'],
+            "X-RapidAPI-Key": rapid_api_key,
             "X-RapidAPI-Host": "twitter241.p.rapidapi.com"
         }
         data = requests.get(url, headers=headers, params=querystring)

@@ -3,6 +3,15 @@ import requests
 from utils import clean_text 
 import os 
 
+from dotenv import load_dotenv
+
+load_dotenv()   
+
+gemini_api_key = os.getenv("GEMINI_API_KEY")
+unsplash_api_key = os.getenv("UNSPLASH_API_KEY")
+
+
+
 safety_settings = [
     {
         "category": "HARM_CATEGORY_DANGEROUS",
@@ -36,7 +45,9 @@ class ContentGenerator:
     
     def get_image_link(self, search_query, page=1, per_page=1):
 
-        url = f"https://api.unsplash.com/search/photos?query={search_query}&per_page={per_page}&page={page}&client_id={os.environ['UNSPLASH_API_KEY']}"
+        url = f"https://api.unsplash.com/search/photos?query={search_query}&per_page={per_page}&page={page}&client_id={unsplash_api_key}"
+        # url = f"https://api.unsplash.com/search/photos?query={search_query}&per_page={per_page}&page={page}&client_id={os.environ['UNSPLASH_API_KEY']}"
+
         response = requests.get(url)
         if response.status_code == 200:
             data = response.json()

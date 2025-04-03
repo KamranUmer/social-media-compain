@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
     Personalized Content Suggestion:
     Text:
-    "[Insert Name], you deserve hydration that's as unique as you are! Customize your Tupperware Water Bottle with your favorite color and pattern, and show the world your style." \ud83c\udfa8\ud83c\udf08
+    "[Insert Name], you deserve hydration that's as unique as you are! Customize your Tupperware Water Bottle with your favorite color and pattern, and show the world your style.  " \ud83c\udfa8\ud83c\udf08
 
     Hashtag: #HydrateInStyle
     """
