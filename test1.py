@@ -38,5 +38,8 @@ def post_tweet(content):
 
 # Example usage
 if __name__ == "__main__":
-    tweet_content = "Hello, this is a test tweet from my Python script! #Python #Twitter"
+    tweet_content = "Hello, this is "
     post_tweet(tweet_content)  
+
+
+
