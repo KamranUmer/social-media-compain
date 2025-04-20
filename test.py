@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 # import tweepy
 import facebook  # Add Facebook SDK
 import requests  # For making HTTP requests
+#1st contribution comment
 
 # Load environment variables from .env
 load_dotenv()
