@@ -43,7 +43,7 @@ class twitterHandler:
         querystring = {"username":name}
 
         # headers = {
-        #     "X-RapidAPI-Key": "9c33797ae9msh214c753802a05b9p1b7330jsn391debf27903",
+        #     "X-RapidAPI-Key": "",
         #     "X-RapidAPI-Host": "twitter241.p.rapidapi.com"
         # }
         headers = {
@@ -64,7 +64,7 @@ class twitterHandler:
         querystring = {"user": self.user_id ,"count":"20"}
 
         # headers = {
-        #     "X-RapidAPI-Key": "9c33797ae9msh214c753802a05b9p1b7330jsn391debf27903",
+        #     "X-RapidAPI-Key": "",
         #     "X-RapidAPI-Host": "twitter241.p.rapidapi.com"
         # }
 
